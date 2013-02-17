@@ -1,8 +1,10 @@
 ---
-layout: post
+layout: study
 title: "Scaling, Monitoring and Deploying"
-description: ""
-category: 
-tags: []
+toc: "DevOps Magic"
+toc_order: 6
+description: "The black arts of devops on a short timeline at an Olympic scale."
+category: studies
+tags: [studies]
 ---
 {% include JB/setup %}

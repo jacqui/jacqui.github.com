@@ -1,8 +1,10 @@
 ---
 layout: study
-title: "Development, Simples"
-description: ""
+title: "Simplifying Development"
+toc: "Keeping localhost simple"
+toc_order: 7
+description: "Keeping localhost simple in a complicated environment"
 category: 
-tags: []
+tags: [studies]
 ---
 {% include JB/setup %}

@@ -1,0 +1,18 @@
+{% comment %}<!--
+this is a custom table of content generator for the olympics case study.
+pages listed: any page tagged 'studies'
+sort order: each page should define an attribute called 'toc_order' in yaml front matter
+link text: uses 'toc' attribute if defined, falls back to the regular page title
+-->{% endcomment %}
+
+{% for toc_order in (0..10) %}
+  {% for node in site.tags.studies %}
+    {% if node.toc_order == toc_order %}
+      {% if page.url == node.url %}
+        <li class="active"><a href="{{ BASE_PATH }}{{node.url}}">{{ node.toc }}</a></li>
+      {% else %}
+        <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.toc}}</a></li>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}

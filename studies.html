@@ -1,0 +1,16 @@
+---
+layout: page
+title: Studies
+header: Case Studies
+group: navigation
+---
+{% include JB/setup %}
+
+{% for study in site.tags.studies %} 
+  <h2 id="{{ study[0] }}-ref">{{ study[0] | join: "/" }}</h2>
+  <ul>
+    {% assign pages_list = study[1] %}  
+    {% include JB/pages_list %}
+  </ul>
+{% endfor %}
+

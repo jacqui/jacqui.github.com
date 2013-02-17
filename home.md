@@ -1,6 +1,6 @@
 ---
 layout: page
-title : home
+title : MATCH SPARKLER (thrown in air) STARS STARS STARS
 tagline: libraries, projects, studies and possibly some conservatories
 ---
 {% include JB/setup %}

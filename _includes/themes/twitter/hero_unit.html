@@ -1,0 +1,28 @@
+<div class="hero-unit">
+  <div class="media">
+    <a class="pull-left" href="#">
+      <img class="media-object" src="http://farm9.staticflickr.com/8162/7629304702_6ef4275e20_q.jpg">
+    </a>
+    <div class="media-body">
+      <h2>{{ page.title }}</h2>
+      <p>{{ page.description }}</p>
+      <p><a href="{% post_url 2013-02-17-how-to-win-the-olympics %}" class="btn btn-primary btn-large">Tell me more &raquo;</a></p>
+    </div>
+  </div>
+</div>
+{% for unit_order in (0..2) %}
+  <div class="row">
+    {% for toc_order in (0..10) %}
+      {% for node in site.tags.studies %}
+        {% if node.toc_order == toc_order %}
+          <div class="span4">
+            <h2>{{ node.toc }}</h2>
+            <p>{{ node.description }}</p>
+            <p><a class="btn" href="{{ BASE_PATH }}{{node.url}}">View details &raquo;</a></p>
+          </div><!--/span-->
+        {% endif %}
+      {% endfor %}
+    {% endfor %}
+  </div><!--/row-->
+{% endfor %}
+
