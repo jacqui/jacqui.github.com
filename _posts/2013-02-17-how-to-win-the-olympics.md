@@ -1,23 +1,21 @@
 ---
-layout: post
-title: "How to Win the Olympics"
-description: "(or die trying)"
+layout: study
+title: "Studies: How to Win the Olympics"
+tagline: "(or die trying)"
 category: studies
-tags: [olympics, mozilla, openlearning, data]
 ---
 {% include JB/setup %}
 
-# How to Win The Olympics (or die trying)
-
 ## Table of Content
 
-* [The Data Deluge](https://gist.github.com/jacqui/92c889181a845a93148b)
-* [Validation in the Dark](https://gist.github.com/jacqui/16c60f24725bbf739957)
-* [Data Modeling](https://gist.github.com/jacqui/d2a3f89af062ff9e040a)
-* [Publishing Content Worldwide]()
-* [Internationalization and Localization]()
-* [DevOps: Monitoring, Scaling, Deploying]()
-* [Simplifying Development]()
+* [The Story]({% post_url 2013-02-17-how-to-win-the-olympics %})
+* [The Data Deluge]({% post_url 2013-02-17-the-data-deluge %})
+* [Validating in the Dark]({% post_url 2013-02-17-validating-in-the-dark %})
+* [Modeling Data without Losing]({% post_url 2013-02-17-modeling-data-without-losing %})
+* [Publishing Worldwide]({% post_url 2013-02-17-publishing-worldwide %})
+* [Internationalization and Localization]({% post_url 2013-02-17-internationalization-and-localization %})
+* [Scaling, Monitoring and Deploying]({% post_url 2013-02-17-scaling-monitoring-and-deploying %})
+* [Development, Simply]({% post_url 2013-02-17-development-simples %})
 
 
 ## The Story
