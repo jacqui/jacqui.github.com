@@ -8,6 +8,9 @@ tags: [deluge]
 ---
 {% include JB/setup %}
 
+* [Previous: Gigabytes of XML]({% post_url 2013-02-17-the-data-deluge-accepting-gigabytes-of-xml %})
+* [Next: XML Variety Show]({% post_url 2013-02-17-the-data-deluge-xml-varieties %})
+
 ### Problem: Finding the Important Messages
 
 Ok, the listener is saving ODF messages on the server. The thing about these messages is that you don't have to parse every single one to get a full accurate view of the data. There are incremental messages updating a single athlete's time in a race, immediately followed by a fuller message listing every athlete's results in that race. 
@@ -61,5 +64,3 @@ LogicalDate + Time + DocumentCode + Document Subcode + DocumentType + DocumentSu
 
 Underscores are used for padding when one of those attributes is missing, blank or shorter than the maximum size.
 
-* [Previous: Gigabytes of XML]({% post_url 2013-02-17-the-data-deluge-accepting-gigabytes-of-xml %})
-* [Next: XML Variety Show]({% post_url 2013-02-17-the-data-deluge-xml-varieties %})

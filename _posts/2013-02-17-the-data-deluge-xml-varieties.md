@@ -2,11 +2,14 @@
 layout: study
 study_name: "How to Win the Olympics"
 title: "1. The Data Deluge"
-tagline: "The Many XML Varieties"
+tagline: "XML Variety Show"
 category: 
 tags: [deluge]
 ---
 {% include JB/setup %}
+
+* [Previous: Names Are Important]({% post_url 2013-02-17-the-data-deluge-meaningful-filenames %})
+* [Next: Parsing]({% post_url 2013-02-17-the-data-deluge-parsing %})
 
 ### The Spectrum of Data Types
 
@@ -21,5 +24,3 @@ tags: [deluge]
 **More!**: DT_GLOBAL_GM, DT_GLOBAL_GN, DT_GM, DT_GN, DT_SERIAL, DT_RT_KA, DT_WEATHER, DT_TRS
 
 
-* [Previous: Names Are Important]({% post_url 2013-02-17-the-data-deluge-meaningful-filenames %})
-* [Next: Parsing]({% post_url 2013-02-17-the-data-deluge-parsing %})

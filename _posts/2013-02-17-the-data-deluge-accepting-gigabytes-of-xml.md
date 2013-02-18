@@ -8,6 +8,9 @@ tags: [deluge]
 ---
 {% include JB/setup %}
 
+* [Previous: Intro]({% post_url 2013-02-17-the-data-deluge %})
+* [Next: Names are Important]({% post_url 2013-02-17-the-data-deluge-meaningful-filenames %})
+
 ### Problem: Keeping Up With The ODFs
 
 Even a quick glance at the schedule of events in teh Summer Games told us that we'd have to handle a lot of inbound traffic from the ODF. 
@@ -38,5 +41,3 @@ Limited use of [regular expressions](http://rubular.com/) was our fast alternati
 
 For hosting, we used [Amazon Web Services (AWS) EC2](http://aws.amazon.com/ec2/) instances (servers in the cloud) along with an [AWS Elastic Block Store (EBS)](http://aws.amazon.com/ebs/) volume mounted on the EC2 server the Listener ran on.
 
-* [Previous: The Data Deluge]({% post_url 2013-02-17-the-data-deluge %})
-* [Next: Names are Important]({% post_url 2013-02-17-the-data-deluge-meaningful-filenames %})

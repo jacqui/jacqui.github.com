@@ -8,6 +8,9 @@ tags: [deluge]
 ---
 {% include JB/setup %}
 
+* [Previous: Parsing]({% post_url 2013-02-17-the-data-deluge-parsing %})
+* [Next: Toolbox]({% post_url 2013-02-17-the-data-deluge-toolbox %})
+
 ### Problem: Not Letting One Bad Apple Ruin the Whole Olympics
 
 Automated exception alerting and monitoring tools helped us stay aware of the health of the application, down to each queue and even message parsing status. 
@@ -20,5 +23,3 @@ In addition to watching various admin screens, though, we were notified via emai
 
 If we found ourselves in that predicament, though, we wanted to be sure that getting the systems back up and running was relatively straightforward. Since we followed the same naming convention as the IOC did on their backup site, all we had to do was download a missing file to our server alongside the rest of the messages. The parsers would pick them up in the same way as the messages posted to the Listener. We also had the ability to requeue messages that failed due to faulty logic in our parsers.
 
-* [Previous: Parsing]({% post_url 2013-02-17-the-data-deluge-parsing %})
-* [Next: Toolbox]({% post_url 2013-02-17-the-data-deluge-toolbox %})

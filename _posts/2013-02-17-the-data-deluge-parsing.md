@@ -2,11 +2,14 @@
 layout: study
 study_name: "How to Win the Olympics"
 title: "1. The Data Deluge"
-tagline: "Actually Parsing the Right Messages"
+tagline: "Parsing"
 category: 
 tags: [deluge]
 ---
 {% include JB/setup %}
+
+* [Previous: XML Variety Show]({% post_url 2013-02-17-the-data-deluge-xml-varieties %})
+* [Next: Recovery]({% post_url 2013-02-17-the-data-deluge-recovery %})
 
 ### Problem: Knowing What To Do
 

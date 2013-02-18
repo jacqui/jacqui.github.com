@@ -8,7 +8,7 @@ link text: uses 'toc' attribute if defined, falls back to the regular page title
 {% for toc_order in (0..10) %}
   {% for node in site.tags.studies %}
     {% if node.toc_order == toc_order %}
-      {% if page.url == node.url %}
+      {% if page.url == node.url or page.title == node.title %}
         <li class="active"><a href="{{ BASE_PATH }}{{node.url}}">{{ node.toc }}</a></li>
       {% else %}
         <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.toc}}</a></li>
