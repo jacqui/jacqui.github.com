@@ -5,14 +5,19 @@ sort order: each page should define an attribute called 'toc_order' in yaml fron
 link text: uses 'toc' attribute if defined, falls back to the regular page title
 -->{% endcomment %}
 
-{% for toc_order in (0..10) %}
-  {% for node in site.tags.studies %}
-    {% if node.toc_order == toc_order %}
-      {% if page.url == node.url or page.title == node.title %}
-        <li class="active"><a href="{{ BASE_PATH }}{{node.url}}">{{ node.toc }}</a></li>
-      {% else %}
-        <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.toc}}</a></li>
-      {% endif %}
+{% assign toc_nodes = site.tags[page.category] | map: 'to_liquid' | sort: 'subnav_order' %}
+  {% for node in toc_nodes %}
+    {% assign link_text = node.tagline %}
+    {% if node.toc %}
+      {% assign link_text = node.toc %}
+    {% endif %}
+    {% if node.subnav_title %}
+      {% assign link_text = node.subnav_title %}
+    {% endif %}
+
+    {% if page.url == node.url %}
+      <li class="active"><a href="{{ BASE_PATH }}{{node.url}}">{{ link_text }}</a></li>
+    {% else %}
+      <li><a href="{{ BASE_PATH }}{{node.url}}">{{link_text}}</a></li>
     {% endif %}
   {% endfor %}
-{% endfor %}

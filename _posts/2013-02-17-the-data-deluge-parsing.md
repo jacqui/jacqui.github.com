@@ -1,9 +1,10 @@
 ---
 layout: study
 study_name: "How to Win the Olympics"
-title: "1. The Data Deluge"
+title: "The Data Deluge"
 tagline: "Parsing"
-category: 
+subnav_order: 4
+category: deluge
 tags: [deluge]
 ---
 {% include JB/setup %}
@@ -21,7 +22,7 @@ Which one provides the most up-to-date, accurate data? If we missed a incrementa
 
 Messages usually did not include the full story, either. Some were more straight forward than others:
 
-{% highlight xml %}
+```
     <CumulativeResult SortOrder="1" Rank="1" RankEqual="N" ResultType="TIME" Result="9.54" QualificationMark="Q">
 			<RecordIndicators>
 				<RecordIndicator Order="1" Code="WR" />
@@ -41,13 +42,13 @@ Messages usually did not include the full story, either. Some were more straight
 				</Composition>
 			</Competitor>
 		</CumulativeResult>
-{% endhighlight %}
+```
 
 That shows Usain Bolt winning a preliminary race in the 100m dash, qualifying for the next round and breaking a world record to boot. 
 
-{% highlight xml %}
-      <Period Code="Q2_H" HomeScore="20" AwayScore="35"/>
-{% endhighlight %}
+```
+  <Period Code="Q2_H" HomeScore="20" AwayScore="35"/>
+```
 
 The above snippet shows the score in a men's basketball game. However: which period is "Q2_H"*? More importantly, who are the "Home" and "Away" teams in an international sporting event? 
 

@@ -1,3 +1,4 @@
+{% if page.category == 'deluge' %}
 <div class="span3">
   <div class="well sidebar-nav">
     <ul class="nav nav-list">
@@ -10,6 +11,9 @@
   </div><!--/.well -->
 </div><!--/span-->
 <div class="span9">
+{% else %}
+<div class="span12">
+{% endif %}
   <div class="page-header">
     <h1>{{ page.title }} <small>{{ page.tagline }}</small></h1>
   </div>

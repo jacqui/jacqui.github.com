@@ -30,8 +30,9 @@
     <div class="navbar">
       <div class="navbar-inner">
         <div class="container-fluid">
-          <a class="brand" href="{% post_url 2013-02-17-how-to-win-the-olympics %}">{{ page.study_name }}</a>
+          <a class="brand" href="{% post_url 2013-02-17-how-to-win-the-olympics %}"><img src="/assets/studies/img/london2012_nav_rings.png" height="27" width="112"></a>
           <ul class="nav">
+            <li><a href="{% post_url 2013-02-17-how-to-win-the-olympics %}">{{ page.study_name }}</a></li>
             {% assign pages_list = site.pages %}
             {% assign group = 'navigation' %}
             {% include JB/pages_list %}

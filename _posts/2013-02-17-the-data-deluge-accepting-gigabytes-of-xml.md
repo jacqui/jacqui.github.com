@@ -1,9 +1,10 @@
 ---
 layout: study
 study_name: "How to Win the Olympics"
-title: "1. The Data Deluge"
+title: "The Data Deluge"
 tagline: "Gigabytes of XML"
-category: 
+subnav_order: 1
+category: deluge
 tags: [deluge]
 ---
 {% include JB/setup %}
