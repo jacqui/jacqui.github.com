@@ -61,3 +61,5 @@ LogicalDate + Time + DocumentCode + Document Subcode + DocumentType + DocumentSu
 
 Underscores are used for padding when one of those attributes is missing, blank or shorter than the maximum size.
 
+* [Previous: Gigabytes of XML]({% post_url 2013-02-17-the-data-deluge-accepting-gigabytes-of-xml %})
+* [Next: XML Variety Show]({% post_url 2013-02-17-the-data-deluge-xml-varieties %})

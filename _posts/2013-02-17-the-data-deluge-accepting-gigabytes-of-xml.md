@@ -37,3 +37,6 @@ We skipped all the overheard of a Rails - or even Sinatra - framework and decide
 Limited use of [regular expressions](http://rubular.com/) was our fast alternative to full-scale XML parsing. There are risks inherent in this approach, generally speaking, but we found it worked great with predictably consistent, well-structured text in ODF XML. [Related take on this issue, only for HTML](http://www.codinghorror.com/blog/2009/11/parsing-html-the-cthulhu-way.html).
 
 For hosting, we used [Amazon Web Services (AWS) EC2](http://aws.amazon.com/ec2/) instances (servers in the cloud) along with an [AWS Elastic Block Store (EBS)](http://aws.amazon.com/ebs/) volume mounted on the EC2 server the Listener ran on.
+
+* [Previous: The Data Deluge]({% post_url 2013-02-17-the-data-deluge %})
+* [Next: Names are Important]({% post_url 2013-02-17-the-data-deluge-meaningful-filenames %})

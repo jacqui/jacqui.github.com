@@ -63,3 +63,5 @@ Basically, though, once the decision was made, the message was sent off to the p
 We used [Resque](https://github.com/defunkt/resque#readme) - a ruby library for placing jobs on one or more queues for later processing - to handle the division of labor across sports-specific job queues. Resque is backed by [Redis](http://redis.io/topics/introduction), a high performance data store for key-value and advanced data structures. Redis was so fast that we ended up using it to store the more extended data points, not just as a lightweight backend for Resque. In other words, what didn't go in MySQL ended up in here. [MySQL](http://dev.mysql.com/doc/refman/5.6/en/what-is-mysql.html) is a popular relational database server and we stored the bulk of top-level Olympics data in it.
 
 For the actual parsing of XML, we turned to the ruby gem [Nokogiri](http://nokogiri.org/), known for its speed and reliability with massive amounts of XML. 
+
+
