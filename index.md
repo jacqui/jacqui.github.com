@@ -1,6 +1,6 @@
 ---
-layout: page
-title : home
+layout: blank
+title : jacqui.github.com
 tagline: libraries, projects, studies and possibly some conservatories
 ---
 {% include JB/setup %}
