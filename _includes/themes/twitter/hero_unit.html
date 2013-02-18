@@ -1,7 +1,7 @@
 <div class="hero-unit">
   <div class="row-fluid">
     <div class="columnA pull-left">
-      <img src="http://farm9.staticflickr.com/8162/7629304702_6ef4275e20_q.jpg">
+      <img src="http://farm9.staticflickr.com/8107/8484123920_516296553b_n.jpg">
     </div>
     <div class="columnB pull-left">
       <h2>{{ page.title }}</h2>
@@ -9,45 +9,21 @@
     </div>
   </div>
 </div>
-<div class="row-fluid">
-  {% for toc_order in (0..2) %}
-    {% for node in site.tags.studies %}
-      {% if node.toc_order == toc_order %}
-        <div class="span4">
-          <h2>{{ node.toc }}</h2>
-          <p>{{ node.description }}</p>
-          <p><a class="btn" href="{{ BASE_PATH }}{{node.url}}">View details &raquo;</a></p>
-        </div><!--/span-->
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-</div><!--/row-->
 
-<div class="row-fluid">
-  {% for toc_order in (3..5) %}
-    {% for node in site.tags.studies %}
-      {% if node.toc_order == toc_order %}
-        <div class="span4">
-          <h2>{{ node.toc }}</h2>
-          <p>{{ node.description }}</p>
-          <p><a class="btn" href="{{ BASE_PATH }}{{node.url}}">View details &raquo;</a></p>
-        </div><!--/span-->
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-</div><!--/row-->
+{% assign sorted_nodes = site.tags.studies | map: 'to_liquid' | sort: 'toc_order' %}
 
-<div class="row-fluid">
-  {% for toc_order in (6..9) %}
-    {% for node in site.tags.studies %}
-      {% if node.toc_order == toc_order %}
-        <div class="span4">
-          <h2>{{ node.toc }}</h2>
-          <p>{{ node.description }}</p>
-          <p><a class="btn" href="{{ BASE_PATH }}{{node.url}}">View details &raquo;</a></p>
-        </div><!--/span-->
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-</div><!--/row-->
+{% for node in sorted_nodes %}
+  {% assign remainder = forloop.index | modulo:3 %}
+  {% if forloop.first or remainder == 1 %}
+    <div class="row-fluid">
+  {% endif %}
+      <div class="span4">
+        <h2><a href="{{ BASE_PATH }}{{node.url}}">{{ node.toc }}</a></h2>
+        <p>{{ node.description }}</p>
+        <p><a class="btn" href="{{ BASE_PATH }}{{node.url}}">chapter {{ forloop.index }} &raquo;</a></p>
+      </div><!--/span-->
+  {% if forloop.last or remainder == 0 %}
+    </div>
+  {% endif %}
+{% endfor %}
 

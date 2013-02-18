@@ -70,8 +70,9 @@ html, body {
 }
 	
 .columnA {
-  width: 160px;
+  width: 320px;
 }
 .columnB {
-  width: 750px;
+  width: 580px;
+  margin-left: 10px;
 }
