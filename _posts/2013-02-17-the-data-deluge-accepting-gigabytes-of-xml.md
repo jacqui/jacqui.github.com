@@ -14,7 +14,7 @@ tags: [deluge]
 
 ### Problem: Keeping Up With The ODFs
 
-Even a quick glance at the schedule of events in teh Summer Games told us that we'd have to handle a lot of inbound traffic from the ODF. 
+Even a quick glance at the schedule of events in the Summer Games told us that we'd have to handle a lot of inbound traffic from ODF. 
 
 Missing a message could lead to gaps in results data on the live site, or even worse, incorrect results. If we missed an 'official', final results message, we might end up showing the wrong country winning the gold! 
 
