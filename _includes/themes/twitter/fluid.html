@@ -27,19 +27,6 @@
 
   <body>
 
-    <div class="navbar">
-      <div class="navbar-inner">
-        <div class="container-fluid">
-          <a class="brand" href="{% post_url 2013-02-17-how-to-win-the-olympics %}"><img src="/assets/studies/img/london2012_nav_rings.png" height="27" width="112"></a>
-          <ul class="nav">
-            {% assign sorted_pages = site.tags.navbar | map: 'to_liquid' | sort: 'toc_order' %}
-            <li><a href="{% post_url 2013-02-17-how-to-win-the-olympics %}">{{ page.study_name }}</a></li>
-            {% assign pages_list = sorted_pages %}
-            {% include JB/pages_list %}
-          </ul>
-        </div>
-      </div>
-    </div>
 
     <div class="container-fluid">
       <div class="row-fluid content">
