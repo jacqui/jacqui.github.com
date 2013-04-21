@@ -1,5 +1,5 @@
 ---
-layout: blank
+layout: study
 study_name: "How to Win the Olympics"
 title: "The Data Deluge"
 toc: "Data Deluge"
